@@ -1,0 +1,148 @@
+* {
+    font-family: "Roboto", sans-serif;
+    color: #DB9A64;
+}
+
+.text-color {
+    color: #DB9A64;
+}
+
+.text-color:hover {
+    color: white;
+}
+.watch-cv:hover #_ionicon{
+    color: white;
+}
+.greating-h1 {
+    padding: 100px 0 90px;
+    font-size: 90px;
+}
+
+.runtimeTitle {
+    padding: 240px 0 70px;
+    font-size: 55px;
+}
+
+.backgroungpic {
+    background-image: url("./Images/backgroundpic.webp");
+    background-size: cover;
+}
+
+#_ionicon {
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+#svginside {
+    fill: #DB9A64;
+
+}
+
+.watch-cv {
+    color: #DB9A64;
+}
+
+.watch-cv:hover {
+    color: white;
+}
+
+.numberssection {
+    /* padding: 80px 0px; */
+    /* background-attachment: ; */
+    /* transform: translateY(150px); */
+    /* opacity: 0; */
+    transition-property: all;
+    transition-delay: scroll;
+    transition-duration: 6s;
+    /* transform: translateY(50px); */
+    /* opacity: 1; */
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+    ;
+
+}
+
+.numbersdiv,
+.formsec {
+    background-color: #311e24;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23311e24'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23311e24'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    stroke-width: 10;
+}
+/*              Form Section*/
+#exampleFormControlname,
+#exampleFormControlemail,
+#exampleFormSelectTime,
+#exampleFormSelectBudget,
+#exampleFormControlTextarea1 {
+    background-color: #311e24;
+}
+
+#exampleFormControlname::placeholder,
+#exampleFormControlemail::placeholder,
+#exampleFormControlTextarea1::placeholder {
+    color: white;
+    opacity: 50%;
+}
+/*              Button Animation              */
+.LetsTalk {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #DB9A64;
+    border: 1px solid #DB9A64;
+    z-index: 1;
+    padding: 12px 20px;
+}
+.LetsTalk::before
+ {
+    content: '';
+    position: absolute;
+    width: 52%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    /* bottom: 0; */
+    background-color:#DB9A64 ;
+    z-index: -1;
+    transition-duration:  0.3s ;
+}
+.LetsTalk::after{
+    content: '';
+    position: absolute;
+    width: 52%;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    background-color:#DB9A64 ;
+    z-index: -1;
+    transition-duration:  0.3s ;
+}
+.LetsTalk::before {
+    transform: translateY(-102%);
+}
+.LetsTalk::after {
+    transform: translateY(102%);
+}
+.LetsTalk:hover::before,
+.LetsTalk:hover::after {
+    transform: scaleY(1);
+}
+.LetsTalk:hover{
+    color: white ;
+}
+.LetsTalk:hover .fa-brands{
+    color: white ;
+}
+/*              End Of Button Animation         */ 
