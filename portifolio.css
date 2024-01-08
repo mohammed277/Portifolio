@@ -2,6 +2,15 @@
     font-family: "Roboto", sans-serif;
     color: #DB9A64;
 }
+
+
+
+
+
+
+
+
+
 /*              header          */
 .text-color {
     color: #DB9A64;
@@ -10,9 +19,11 @@
 .text-color:hover {
     color: white;
 }
-.watch-cv:hover #_ionicon{
+
+.watch-cv:hover #_ionicon {
     color: white;
 }
+
 .greating-h1 {
     padding: 100px 0 90px;
     font-size: 8vw;
@@ -49,28 +60,92 @@
 
 /*              End Of header          */
 
-/*              Numbers Section         */
-.numberssection {
-    /* padding: 80px 0px; */
-    /* background-attachment: ; */
-    /* transform: translateY(150px); */
-    /* opacity: 0; */
-    transition-property: all;
-    transition-delay: scroll;
-    transition-duration: 6s;
-    /* transform: translateY(50px); */
-    /* opacity: 1; */
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    opacity: 1;
-    transform-style: preserve-3d;
-    ;
 
+
+
+
+
+
+
+
+/*              Project Section         */
+ul {
+    cursor: pointer;
 }
 
-.numbersdiv,.formsec {
+#mmmm>ul>li {
+    transition: transform 0.3s ease;
+}
+
+#mmmm>ul>li:hover {
+    transform: rotateX(20deg) rotateY(20deg) scale3d(1, 1, 1);
+}
+
+#projsec {
+    height: 82vh;
+}
+
+#content1>* {
+    color: #97717d;
+}
+
+#content2>* {
+    color: #97717d;
+}
+
+#content3>* {
+    color: #97717d;
+}
+
+#content4>* {
+    color: #97717d;
+}
+
+#content5>* {
+    color: #97717d;
+}
+
+#content6>* {
+    color: #97717d;
+}
+
+.scrolling-list img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/*              End Project Section         */
+
+
+
+
+
+
+
+
+
+
+/*              Numbers Section         */
+.numbersdiv,
+.formsec {
     background-color: #311e24;
 }
+
 /*             End Of Numbers Section         */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*              Slide Message Section           */
@@ -85,13 +160,30 @@
 /*              End Of Slide Message Section           */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*              Form Section            */
-#exampleFormControlname,#exampleFormControlemail,#exampleFormSelectTime,
-#exampleFormSelectBudget,#exampleFormControlTextarea1 {
+#exampleFormControlname,
+#exampleFormControlemail,
+#exampleFormSelectTime,
+#exampleFormSelectBudget,
+#exampleFormControlTextarea1 {
     background-color: #311e24;
 }
 
-#exampleFormControlname::placeholder,#exampleFormControlemail::placeholder,
+#exampleFormControlname::placeholder,
+#exampleFormControlemail::placeholder,
 #exampleFormControlTextarea1::placeholder {
     color: white;
     opacity: 50%;
@@ -107,8 +199,8 @@
     z-index: 1;
     padding: 12px 20px;
 }
-.LetsTalk::before
- {
+
+.LetsTalk::before {
     content: '';
     position: absolute;
     width: 52%;
@@ -117,11 +209,12 @@
     left: 0;
     /* right: 0; */
     /* bottom: 0; */
-    background-color:#DB9A64 ;
+    background-color: #DB9A64;
     z-index: -1;
-    transition-duration:  0.3s ;
+    transition-duration: 0.3s;
 }
-.LetsTalk::after{
+
+.LetsTalk::after {
     content: '';
     position: absolute;
     width: 52%;
@@ -130,25 +223,46 @@
     /* left: 0; */
     right: 0;
     bottom: 0;
-    background-color:#DB9A64 ;
+    background-color: #DB9A64;
     z-index: -1;
-    transition-duration:  0.3s ;
+    transition-duration: 0.3s;
 }
+
 .LetsTalk::before {
     transform: translateY(-102%);
 }
+
 .LetsTalk::after {
     transform: translateY(102%);
 }
+
 .LetsTalk:hover::before,
 .LetsTalk:hover::after {
     transform: scaleY(1);
 }
-.LetsTalk:hover{
-    color: white ;
+
+.LetsTalk:hover {
+    color: white;
 }
-.LetsTalk:hover .fa-brands{
-    color: white ;
+
+.LetsTalk:hover .fa-brands {
+    color: white;
 }
-/*              End Of Button Animation         */ 
+
+/*              End Of Button Animation         */
 /*              End Of Form Section            */
+
+
+
+
+
+
+
+
+
+@media (max-width: 978px) {
+    .runtimeTitle {
+        padding: 0 0 0 0;
+        font-size: 5vw;
+    }
+}
